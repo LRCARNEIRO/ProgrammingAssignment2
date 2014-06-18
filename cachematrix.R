@@ -7,7 +7,13 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-
+set <- function(y) {
+    x <<- y
+    inv <<- NULL
+  }
+  
+ 
+  get <- function() x
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
